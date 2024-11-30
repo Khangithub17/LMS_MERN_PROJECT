@@ -17,7 +17,7 @@ import { useEditLectureMutation, useGetLectureByIdQuery, useRemoveLectureMutatio
 import { useParams } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 
-const MEDIA_API = "http://localhost:3000/api/v1/media";
+const MEDIA_API = "https://lms-mern-project-xpoa.onrender.com//api/v1/media";
 
 const LectureTab = () => {
     const [lecturetitle, setLectureTitle] = useState("");
