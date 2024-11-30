@@ -10,7 +10,7 @@ const MainLayout = () => {
       <div className='flex flex-col min-h-screen dark:bg-gray-900 dark:text-white'>
         <Navbar/>
         <DarkMode /> {/* Add DarkMode component here */}
-        <div className='flex-1 mt-16'>
+        <div className='flex-1 mt-16 h-screen overflow-y-auto'>
           <Outlet/>
         </div>
       </div>

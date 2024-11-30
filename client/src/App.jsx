@@ -16,12 +16,7 @@ import EditLecture from "./pages/admin/lecture/EditLecture";
 import CourseDetail from "./pages/student/CourseDetail";
 import CourseProgress from "./pages/student/CourseProgress";
 import SearchPage from "./pages/student/SearchPage";
-import {
-  AdminRoute,
-  AuthenticatedUser,
-  ProtectedRoute,
-} from "./components/ProtectedRoutes";
-import PurchaseCourseProtectedRoute from "./components/PurchaseCourseProtectedRoute";
+
 import { ThemeProvider } from "./components/ThemeProvider";
 
 const appRouter = createBrowserRouter([
@@ -40,63 +35,34 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "login",
-        element: (
-          <AuthenticatedUser>
-            <Login />
-          </AuthenticatedUser>
-        ),
+        element: <Login />,
       },
       {
         path: "my-learning",
-        element: (
-          <ProtectedRoute>
-            <MyLearning />
-          </ProtectedRoute>
-        ),
+        element: <MyLearning />,
       },
       {
         path: "profile",
-        element: (
-          <ProtectedRoute>
-            <Profile />
-          </ProtectedRoute>
-        ),
+        element: <Profile />,
       },
       {
         path: "course/search",
-        element: (
-          <ProtectedRoute>
-            <SearchPage />
-          </ProtectedRoute>
-        ),
+        element: <SearchPage />,
       },
       {
         path: "course-detail/:courseId",
-        element: (
-          <ProtectedRoute>
-            <CourseDetail />
-          </ProtectedRoute>
-        ),
+        element: <CourseDetail />,
       },
       {
         path: "course-progress/:courseId",
-        element: (
-          <ProtectedRoute>
-            <PurchaseCourseProtectedRoute>
-            <CourseProgress />
-            </PurchaseCourseProtectedRoute>
-          </ProtectedRoute>
-        ),
+        element: <CourseProgress />,
       },
 
       // admin routes start from here
       {
         path: "admin",
-        element: (
-          <AdminRoute>
-            <Sidebar />
-          </AdminRoute>
-        ),
+        element: <Sidebar />,
+
         children: [
           {
             path: "dashboard",
@@ -131,7 +97,7 @@ const appRouter = createBrowserRouter([
 function App() {
   return (
     <ThemeProvider>
-      <main>
+      <main className="h-screen overflow-y-auto">
         <RouterProvider router={appRouter} />
       </main>
     </ThemeProvider>
