@@ -23,12 +23,18 @@ Welcome to **Growth Master**, a modern and intuitive Learning Management System 
 
 ## 📸 Screenshots
 **Homepage**  
-![Screenshot 2024-11-30 130424](https://github.com/user-attachments/assets/10c5edfb-99ed-4d72-ba50-2412fd4bd5e3)
+
+![Screenshot 2024-11-30 203712](https://github.com/user-attachments/assets/0638d629-e9d4-4285-acc8-7b2e1b0cb8b5)
 
 
 **Login Page**  
 
 ![Screenshot 2024-11-30 125243](https://github.com/user-attachments/assets/614da0f9-6f54-462b-8e9e-581a069c404f)
+
+---
+**Dashboard**  
+
+![Screenshot 2024-11-30 204753](https://github.com/user-attachments/assets/65a1921b-782e-4957-a77b-900ee5a284ef)
 
 ---
 
