@@ -3,7 +3,7 @@ import { userLoggedIn } from "../authSlice";
 
 
 
-const USER_API = "https://lms-mern-project-xpoa.onrender.com//api/v1/user/";
+const USER_API = "https://lms-mern-project-xpoa.onrender.com/api/v1/user/";
 
 export const authApi = createApi({
   reducerPath:"authApi",
