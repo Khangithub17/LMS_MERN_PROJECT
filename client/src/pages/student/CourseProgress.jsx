@@ -29,7 +29,7 @@ const CourseProgress = () => {
   ] = useInCompleteCourseMutation();
 
   useEffect(() => {
-    console.log(markCompleteData);
+    
 
     if (completedSuccess) {
       refetch();

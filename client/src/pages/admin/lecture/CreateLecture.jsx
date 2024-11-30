@@ -32,7 +32,7 @@ const CreateLecture = () => {
 
   },[isLoading,error])
 
-  console.log(lectureData);
+
   
 
   return (

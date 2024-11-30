@@ -89,8 +89,7 @@ export const stripeWebhook = async (req, res) => {
 
   // Handle the checkout session completed event
   if (event.type === "checkout.session.completed") {
-    console.log("check session complete is called");
-
+   
     try {
       const session = event.data.object;
 
@@ -147,7 +146,7 @@ export const getCourseDetailWithPurchaseStatus = async (req, res) => {
       .populate({ path: "lectures" });
 
     const purchased = await CoursePurchase.findOne({ userId, courseId });
-    console.log(purchased);
+
 
     if (!course) {
       return res.status(404).json({ message: "course not found!" });
