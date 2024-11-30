@@ -45,6 +45,7 @@ export const getCourseProgress = async (req, res) => {
   }
 };
 
+// Add a CSS class to handle overflow scrolling
 export const updateLectureProgress = async (req, res) => {
   try {
     const { courseId, lectureId } = req.params;

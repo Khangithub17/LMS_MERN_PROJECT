@@ -97,7 +97,7 @@ const appRouter = createBrowserRouter([
 function App() {
   return (
     <ThemeProvider>
-      <main className="h-screen overflow-y-auto">
+      <main className="overflow-y-auto">
         <RouterProvider router={appRouter} />
       </main>
     </ThemeProvider>
